@@ -1,0 +1,40 @@
+.categories {
+  padding: 50px 40px;
+  background-color: white;
+}
+
+.categories h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+  .categories {
+    padding: 30px 20px;
+  }
+
+  .categories h2 {
+    font-size: 22px;
+  }
+}

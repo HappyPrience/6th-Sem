@@ -1,0 +1,45 @@
+.instamart {
+  padding: 50px 40px;
+  background-color: #f8f8f8;
+}
+
+.instamart h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.instamart p {
+  color: #6b6b6b;
+  margin-bottom: 30px;
+}
+
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.insta-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.insta-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .instamart {
+    padding: 30px 20px;
+  }
+
+  .instamart h2 {
+    font-size: 22px;
+  }
+}

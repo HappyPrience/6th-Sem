@@ -1,0 +1,43 @@
+.download {
+  margin: 60px 40px;
+  background-color: #2a2a2a;
+  color: white;
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.download h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.download p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #cfcfcf;
+}
+
+.download button {
+  background-color: #ff5200;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .download {
+    padding: 40px 20px;
+    margin: 30px 20px;
+  }
+
+  .download h2 {
+    font-size: 24px;
+  }
+}
+
+.download button:hover {
+  opacity: 0.85;
+}

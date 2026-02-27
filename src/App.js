@@ -3,7 +3,6 @@ import Hero from "./components/Hero";
 import CategoryCarousel from "./components/CategoryCarousel";
 import Instamart from "./components/Instamart";
 import Products from "./components/Products";
-import AppDownload from "./components/AppDownload";
 import Footer from "./components/Footer";
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
       <CategoryCarousel />
       <Instamart />
       <Products />
-      <AppDownload />
       <Footer />
     </>
   );

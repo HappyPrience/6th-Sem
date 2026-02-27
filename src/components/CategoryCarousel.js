@@ -1,4 +1,4 @@
-import "./CategoryCarousel.css";
+import "../css/CategoryCarousel.css";
 import veg from "../assets/categories/vegetables.png";
 import fruits from "../assets/categories/fruits.png";
 import dairy from "../assets/categories/dairy.png";
@@ -7,11 +7,12 @@ import bakery from "../assets/categories/bakery.png";
 
 function CategoryCarousel() {
   const categories = [
-    { name: "Vegetables", img: veg },
-    { name: "Fruits", img: fruits },
-    { name: "Dairy", img: dairy },
-    { name: "Snacks", img: snacks },
-    { name: "Bakery", img: bakery },
+    { name: "Roti", img: veg },
+    { name: "Palya", img: fruits },
+    { name: "Chatnies/Pudi", img: dairy },
+    { name: "Pickles", img: snacks },
+    { name: "Sweets", img: bakery },
+    {name: "Snacks", img: veg},
   ];
 
   return (

@@ -1,4 +1,4 @@
-import "./Categories.css";
+import "../css/Categories.css";
 
 function Categories() {
   const items = [

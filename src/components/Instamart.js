@@ -1,4 +1,4 @@
-import "./Instamart.css";
+import "../css/Instamart.css";
 
 function Instamart() {
   const items = [

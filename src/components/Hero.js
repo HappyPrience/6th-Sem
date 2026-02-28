@@ -7,8 +7,6 @@ function Hero() {
       <p>Fresh • Local • Homemade</p>
       <button className="explore">Explore Now</button>
     </section>
-
-
   );
 }
 

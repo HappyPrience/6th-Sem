@@ -1,8 +1,10 @@
 import "../css/Navbar.css";
+import logo from "../assets/logo/manemadelogo.jpeg";
 
 function Navbar() {
   return (
     <div className="navbar">
+      <img src={logo} alt="logo" className="logo-img" />
       <h2 className="logo">Mane Made</h2>
       <div className="navbar-2">
         <div className="btns">

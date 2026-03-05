@@ -1,7 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import CategoryCarousel from "./components/CategoryCarousel";
-import Instamart from "./components/Instamart";
 import Products from "./components/Products";
 import Footer from "./components/Footer";
 
@@ -11,7 +10,6 @@ function App() {
       <Navbar />
       <Hero />
       <CategoryCarousel />
-      <Instamart />
       <Products />
       <Footer />
     </>

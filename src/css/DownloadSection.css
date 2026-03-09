@@ -1,0 +1,52 @@
+
+.download-section{
+    background-color: #f2eeee;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+
+.download-section1{
+    height: 10cm;
+    width: 27cm;
+    color: white;
+    margin-left: 5cm;
+    padding-top: 30px;
+    display: flex;
+    background-color:red;
+    gap: 3cm;
+    border-color:none;
+    border-radius: 30px;
+    background:linear-gradient(180deg, orange,red);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 2);
+    transition: all 0.3s ease;
+}
+
+.download-section1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.download-left{
+    margin-left: 4.5cm;
+    margin-top: 1.5cm;
+}
+
+.store-buttons{
+    display: flex;
+    gap: 0.5cm;
+}
+
+
+.download-right{
+    padding-bottom: 5cm;
+}
+.phone{
+    text-align: right;
+    margin-right: 35px;
+    justify-content: center;
+}
+
+.phone p{
+    margin-right: 30px;
+}

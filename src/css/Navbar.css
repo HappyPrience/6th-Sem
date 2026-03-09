@@ -1,4 +1,5 @@
 .navbar {
+  background:linear-gradient(90deg,#6a4de3,#5a3fd1);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -7,9 +8,19 @@
   justify-content: space-between;
   gap: 15px;
   padding: 10px 20px;
-  background-color: #ff5a00;
-  border-bottom: 3px solid white;
-  border-radius: 10px;
+  color: white;
+}
+
+.navbar-2 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-img {
+  width: 3.3cm;
+  height: 1.7cm;
+  padding-left: 0.3cm;
 }
 
 .logo {
@@ -40,34 +51,89 @@
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
+  background: var(--primary);
+}
+
+.theme-btn {
+  padding: 8px 14px;
+  border: 1px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  cursor: pointer;
 }
 .btn:hover{
   transition: 0.3s ease;
   background-color: black;
 }
 
-/*.btn {
-  background-color: rgb(234, 9, 9);
-  color: white;
-  padding: 10px 18px;
-  border-radius: 6px;
-  font-weight: bold;
-  margin-left: 10cm;
-}
-.btn1{
-  background-color: rgb(234, 9, 9);
-  color: white;
-  padding: 10px 18px;
-  border-radius: 6px;
-  font-weight: bold;
-  margin-left: 4cm;
+.nav-links{
+display:flex;
+list-style:none;
+gap:30px;
 }
 
-.btn:hover {
-  background-color: black;
-  opacity: 0.85;
+.nav-links a{
+display:flex;
+align-items:center;
+gap:7px;
+text-decoration:none;
+color:white;
+font-size:16px;
+transition:0.3s;
 }
-  */
+
+.nav-links a:hover{
+color:#ffd166;
+
+}
+
+/* Cart Badge */
+.cart-link{
+position:relative;
+}
+
+.cart-badge{
+position:absolute;
+top:-8px;
+right:-12px;
+background:red;
+color:white;
+font-size:12px;
+padding:3px 6px;
+border-radius:50%;
+}
+
+/* Mobile Menu Icon */
+.menu-icon{
+display:none;
+font-size:24px;
+cursor:pointer;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+.menu-icon{
+display:block;
+}
+
+.nav-links{
+position:absolute;
+top:70px;
+left:-100%;
+flex-direction:column;
+background:#5a3fd1;
+width:100%;
+text-align:center;
+padding:20px 0;
+transition:0.3s;
+}
+
+.nav-links.active{
+left:0;
+}
+
+}
 
 @media (max-width: 768px) {
   .navbar {

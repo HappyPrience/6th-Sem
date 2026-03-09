@@ -1,34 +1,70 @@
 import "../css/CategoryCarousel.css";
-import veg from "../assets/categories/vegetables.png";
-import fruits from "../assets/categories/fruits.png";
-import dairy from "../assets/categories/dairy.png";
-import snacks from "../assets/categories/snacks.png";
-import bakery from "../assets/categories/bakery.png";
+import { useRef } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import veg from "../assets/categories/roti.webp";
+import fruits from "../assets/categories/palya.webp";
+import dairy from "../assets/categories/Chatnies.webp";
+import snacks from "../assets/categories/snacks.jpg";
+import bakery from "../assets/categories/sweets.webp";
+import pickles from "../assets/categories/pickles.webp";
 
 function CategoryCarousel() {
+
+  const sliderRef = useRef();
+
+  const scrollLeft = () => {
+    sliderRef.current.scrollBy({
+      left: -200,
+      behavior: "smooth"
+    });
+  };
+
+  const scrollRight = () => {
+    sliderRef.current.scrollBy({
+      left: 200,
+      behavior: "smooth"
+    });
+  };
+
   const categories = [
     { name: "Roti", img: veg },
     { name: "Palya", img: fruits },
-    { name: "Chatnies/Pudi", img: dairy },
-    { name: "Pickles", img: snacks },
+    { name: "Chatnies", img: dairy },
+    { name: "Snacks", img: snacks },
     { name: "Sweets", img: bakery },
-    {name: "Snacks", img: veg},
+    { name: "Pickles", img: pickles },
+    { name: "Roti", img: veg },
+    { name: "Palya", img: fruits },
   ];
 
   return (
-    <div className="carousel-section">
-      <h2>Shop by Category</h2>
+    <section className="category-section">
 
-      <div className="carousel">
+      <div className="category-header left">
+        <h2>Explore Categories</h2>
+      </div>
+
+      <div className="category-slider" ref={sliderRef}>
+        
+         <button className="slider-button left" onClick={scrollLeft}>
+            <FaChevronLeft />
+          </button>
+
+
         {categories.map((cat, index) => (
-          <div className="carousel-card" key={index}>
+          <div className="category-card" key={index}>
             <img src={cat.img} alt={cat.name} />
             <p>{cat.name}</p>
           </div>
         ))}
+
+         <button className="slider-button right" onClick={scrollRight}>
+            <FaChevronRight />
+          </button>
+
       </div>
-    </div>
+
+    </section>
   );
 }
-
 export default CategoryCarousel;

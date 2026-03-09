@@ -1,13 +1,13 @@
 import "../css/Products.css";
-import dosa from "../assets/products/dosa.jpg";
-import idli from "../assets/products/idli.jpg";
-import pickle from "../assets/products/pickle.jpg";
+import Breakfast  from "../assets/products/Breakfast.webp";
+import Lunch from "../assets/products/Lunch.webp";
+import EveningSncks from "../assets/products/EveningSncks.webp";
 
 function Products() {
   const products = [
-    { name: "Breakfast", price: 60, img: dosa, rating: 4.5 },
-    { name: "Lunch & Dinner", price: 40, img: idli, rating: 4.3 },
-    { name: "Snacks", price: 120, img: pickle, rating: 4.7 },
+    { name: "Breakfast", price: 60, img: Breakfast, rating: 4.5 },
+    { name: "Lunch & Dinner", price: 40, img: Lunch, rating: 4.3 },
+    { name: "Snacks", price: 120, img: EveningSncks, rating: 4.7 },
   ];
 
   return (

@@ -18,6 +18,7 @@ function Hero() {
 
   return (
     <section className="hero">
+<<<<<<< HEAD
       
     
       <div className="hero-slider">
@@ -36,6 +37,15 @@ function Hero() {
       <div className="hero-search">
           <input type="text" placeholder="Search Handmade Products..." />
       </div>
+=======
+      <h1>Order Handmade Products Near You</h1>
+      <p>Fresh • Local • Homemade</p>
+      <input
+        type="text"
+        placeholder="Search for products..."
+        className="search-bar"
+      />
+>>>>>>> 34a5dc8842699249090ef862fdfcd7fb5378bd6e
     </section>
   );
 }

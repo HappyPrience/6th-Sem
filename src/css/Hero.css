@@ -4,6 +4,7 @@
   align-items: center;
   text-align: center;
   color: white;
+<<<<<<< HEAD
   /*
   background:
    url("../assets/back.avif"),
@@ -84,6 +85,12 @@
   padding-top: 5cm;
   color:white;
   text-align: center;
+=======
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)),
+    url(https://static.tripzilla.in/media/246643/conversions/b0b7ea5c-16db-498b-95e5-558c9b06be71-w768.webp);
+  background-size: cover;
+>>>>>>> 34a5dc8842699249090ef862fdfcd7fb5378bd6e
 }
 
 .hero h1 {
@@ -96,6 +103,7 @@
   margin-bottom: 25px;
 }
 
+<<<<<<< HEAD
 
 /*
 .back-img{
@@ -105,6 +113,15 @@
   align-items: center;
   text-align: center;
   background-color: rgb(10, 10, 10);
+=======
+.search-bar {
+  margin-top: 20px;
+  padding: 10px 15px;
+  width: 250px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+>>>>>>> 34a5dc8842699249090ef862fdfcd7fb5378bd6e
 }
   */
 /*
@@ -181,6 +198,7 @@
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 480px) {
   .hero-search {
     flex-direction: column;
@@ -195,3 +213,12 @@
   }
 }
 
+=======
+.explore {
+  background-color: #050403;
+}
+
+.explore:hover {
+  background-color: #ffe5d9;
+}
+>>>>>>> 34a5dc8842699249090ef862fdfcd7fb5378bd6e

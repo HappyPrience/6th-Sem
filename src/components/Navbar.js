@@ -1,7 +1,11 @@
 import "../css/Navbar.css";
+<<<<<<< HEAD
 import logo from "../assets/Logo.png";
 import { useState } from "react";
 import { FaHome, FaShoppingBag, FaShoppingCart, FaUser, FaBars, FaTimes } from "react-icons/fa";
+=======
+import logo from "../assets/logo/manemadelogo.jpeg";
+>>>>>>> 34a5dc8842699249090ef862fdfcd7fb5378bd6e
 
 function Navbar() {
 
@@ -10,6 +14,7 @@ function Navbar() {
 
   return (
     <div className="navbar">
+<<<<<<< HEAD
 
       {/* Logo */}
       <img src={logo} alt="logo" className="logo-img" />
@@ -54,11 +59,19 @@ function Navbar() {
 
         <button className="theme-btn"></button>
 
+=======
+      <img src={logo} alt="logo" className="logo-img" />
+      <h2 className="logo">Mane Made</h2>
+      <div className="navbar-2">
+>>>>>>> 34a5dc8842699249090ef862fdfcd7fb5378bd6e
         <div className="btns">
           <button className="btn">Sign In</button>
           <button className="btn">Sign Up</button>
         </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 34a5dc8842699249090ef862fdfcd7fb5378bd6e
       </div>
 
     </div>

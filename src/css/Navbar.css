@@ -1,7 +1,6 @@
 .navbar {
   background:linear-gradient(90deg,#6a4de3,#5a3fd1);
   position: sticky;
-  top: 0;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -11,21 +10,10 @@
   color: white;
 }
 
-.navbar-2 {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
 .logo-img {
   width: 3.3cm;
   height: 1.7cm;
   padding-left: 0.3cm;
-}
-
-.logo-img {
-  width: 40px;
-  height: 40px;
 }
 
 .logo {

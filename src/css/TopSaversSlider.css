@@ -1,132 +1,141 @@
-.top-savers{
-padding:60px;
-background-color: #f2eeee;
-height: 13cm;
+/* Import Trending Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins",sans-serif;
 }
 
-/* header */
+/* Section */
+
+.top-savers{
+padding:60px;
+background:#ffffff;
+height:auto;
+}
+
+/* Header */
 
 .top-header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-margin-bottom:25px;
+margin-bottom:20px;
+padding-left:12px;
 }
+
+.top-header h2{
+font-size:28px;
+font-weight:700;
+color:#222;
+letter-spacing:0.5px;
+}
+
+/* Offer badge */
 
 .offer{
-background:#2d8cff;
+background:#ff8a00;
 color:white;
-padding:3px 8px;
+padding:4px 10px;
 font-size:12px;
-border-radius:4px;
-margin-left:8px;
+border-radius:20px;
+margin-left:10px;
+font-weight:500;
 }
 
+/* View All button */
+
 .view-all{
-background:none;
+background:#ff8a00;
 border:none;
-color:#ff8a00;
+color:white;
+padding:8px 16px;
+border-radius:20px;
 cursor:pointer;
 font-weight:500;
-font-size:15px;
+font-size:14px;
+transition:0.3s;
 }
 
 .view-all:hover{
-text-decoration:underline;
+background:#ff7600;
+transform:translateY(-2px);
 }
 
-/* slider */
+/* Slider container */
 
 .slider-container{
-height: 11cm;
-width: 33cm;
+width:100%;
 position:relative;
-padding-left: 12px;
-margin-bottom: 2cm;
-background-color: #f2eeee;
+padding-left:12px;
+background:#ffffff;
 }
+
+/* Slider */
 
 .food-slider{
 display:flex;
 gap:25px;
 overflow-x:auto;
 scroll-behavior:smooth;
-padding-top: 1cm;
-padding-bottom: 1cm;
+padding-top:20px;
+padding-bottom:20px;
 }
 
 .food-slider::-webkit-scrollbar{
 display:none;
 }
 
-.left-btn{
-  width: 2cm;
-  height: 50px;
-  background: linear-gradient(135deg, #f7b35a, #f29c38);
-  border: none;
-  border-radius: 50%;
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.left-btn::before {
-  content: "";
-  width: 12px;
-  height: 12px;
-  border-left: 3px solid white;
-  border-bottom: 3px solid white;
-  transform: rotate(45deg);
-  display: block;
-}
-
-.left-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
-/* slider buttons */
+/* Slider buttons */
 
 .slider-btn{
 position:absolute;
 top:40%;
-background:#060504;
-border:none;
-color:white;
-width:35px;
-height:35px;
+background:white;
+border:1px solid #eee;
+color:#333;
+width:40px;
+height:40px;
 border-radius:50%;
 cursor:pointer;
-padding-top: 5px;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.slider-btn:hover{
+background:#ff8a00;
+color:white;
 }
 
 .left{
-left:-25px;
+left:-35px;
 }
 
 .right{
-right:-25px;
+right:-5.5cm;
 }
 
-/* food card */
+/* Food card */
 
 .food-card{
 background:white;
-min-width:250px;
-height: 8cm;
+min-width:270px;
 padding:20px;
-border-radius:12px;
+border-radius:14px;
 text-align:center;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
 transition:0.3s;
 position:relative;
 }
 
 .food-card:hover{
 transform:translateY(-6px);
-box-shadow:0 8px 25px rgba(0,0,0,0.15);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 .food-card img{
@@ -136,7 +145,7 @@ object-fit:cover;
 border-radius:10px;
 }
 
-/* discount badge */
+/* Discount badge */
 
 .discount{
 position:absolute;
@@ -147,17 +156,18 @@ color:#2ecc71;
 padding:3px 8px;
 font-size:12px;
 border-radius:5px;
+font-weight:500;
 }
 
-/* stock */
+/* Stock */
 
 .stock{
 color:#2ecc71;
 font-size:14px;
-margin:5px 0;
+margin:6px 0;
 }
 
-/* price */
+/* Price */
 
 .price{
 margin:10px 0;
@@ -165,23 +175,29 @@ margin:10px 0;
 
 .new{
 font-weight:600;
+font-size:16px;
 margin-right:8px;
+color:#222;
 }
+
 
 .old{
 text-decoration:line-through;
 color:#888;
+font-size:14px;
 }
 
-/* button */
+/* Add to cart button */
 
 .cart-btn{
 background:#ff8a00;
 border:none;
-padding:8px 15px;
-border-radius:20px;
+padding:9px 16px;
+border-radius:25px;
 color:white;
 cursor:pointer;
+font-size:14px;
+transition:0.3s;
 }
 
 .cart-btn:hover{

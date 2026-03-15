@@ -1,17 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 .hero {
-  height: 90vh;
+  width: 100%;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
+  position: relative;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(rgba(128, 128, 128, 0.6), rgba(64, 64, 64, 0.6)), url('../assets/back.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.hero img{
+.hero img {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
 }
-.hero-slider{
+
+.hero-slider {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -19,64 +30,87 @@
   transition: 0.5s;
 }
 
-.slides{
+.slides {
   display: flex;
   width: 300%;
   height: 100%;
-  background-color: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  animation: slide 15s infinite;
 }
 
-.slides img{
+.slides img {
+  width: 36.4cm;
+  height: 100vh;
   display: flex;
-  width: 35%;
+  object-fit: cover;
 }
 
-.thoughts h1{
+.thoughts h1 {
   text-align: center;
   font-size: 50px;
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
-.thoughts{
+.thoughts {
   padding-top: 5cm;
-  color:white;
+  color: white;
   text-align: center;
   background-size: cover;
 }
 
+.hero-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
 .hero-search input {
   width: 300px;
-  height: 0.5cm;
+  height: 1.2cm;
   padding: 14px;
-  border:none;
+  border: none;
   border-radius: 15px;
+  background-color: gray;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.hero-search input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-search input:hover {
+  background: linear-gradient(45deg, #ff5252, #fb8c00);
+  box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+}
+
+.hero-search input:focus {
+  outline: none;
+  background: linear-gradient(45deg, #ff5252, #fb8c00);
+  box-shadow: 0 0 15px rgba(255, 107, 107, 0.8);
 }
 
 .hero-search button {
-  background: rgb(220, 8, 8);
-  color: white;
+  padding: 14px 20px;
   border: none;
-  border-radius: 40px;
-  padding: 14px 26px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.scroll-arrow {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-
-  transform: translateX(-50%);
-  font-size: 32px;
-
+  border-radius: 15px;
+  background: linear-gradient(45deg, #4caf50, #81c784);
   color: white;
+  font-size: 16px;
   cursor: pointer;
-
-  animation: bounce 1.5s infinite;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
 }
 
+.hero-search button:hover {
+  background: linear-gradient(45deg, #388e3c, #66bb6a);
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+  transform: scale(1.05);
+}
 
 @media (max-width: 480px) {
   .hero-search {
@@ -89,6 +123,11 @@
     width: 100%;
     margin-top: 10px;
     border-radius: 14px;
+  }
+
+  .hero-search button {
+    width: 100%;
+    margin-top: 10px;
   }
 }
 

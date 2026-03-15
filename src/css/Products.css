@@ -1,87 +1,81 @@
 .products {
   padding: 40px 50px;
-  background:#ffe5e5;
+  background: #f5f6f8;
 }
 
-.products h2{
+.products h2 {
   text-align: center;
-  font-weight: bolder;
-  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+  color: #333;
 }
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  justify-items: center;
 }
 
 .product-card {
-  margin-left: 30px;
   background: white;
-  height: 300px;
+  height: 325px;
   width: 300px;
   border-radius: 14px;
-  background: var(--card-bg);
- box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
   padding: 14px;
-  transition: transform 0.2s ease;
+  transition: 0.3s;
 }
-
-.product-card:hover 
-  .product-card:hover{
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
-}
-
-.product-card h3 {
-  color: var(--text-dark);
-}
-
-.price {
-  color: var(--primary);
-  font-weight: bold;
-}
-
 
 .product-card:hover {
   transform: translateY(-8px);
-  transition: transform 0.3s;
-}
-
-.product-card:hover{
-  transform: scale(1.05);
-  transition: transform 0.3s;
-  box-shadow: 0 4px 10px rgba(1, 247, 75, 0.3);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.12);
 }
 
 .product-card img {
   width: 100%;
-  height: 160px;
+  height: 140px;
   object-fit: cover;
   border-radius: 10px;
 }
 
-
 .product-card h3 {
   text-align: center;
-  margin: 10px 0 5px;
-  color: #333;
-}
-
-.price {
-  font-weight: bold;
+  margin: 10px 0;
 }
 
 .rating {
+  text-align: center;
   font-size: 14px;
-  margin-bottom: 10px;
 }
 
-.product-card button {
+.price-box {
+  display: flex;
+  justify-content: center;
+  margin: 6px 0;
+}
+
+.new-price {
+  font-weight: bold;
+  color: #ff5200;
+  font-size: 18px;
+}
+
+.cart-btn {
+  display: block;
+  margin: 8px auto;
+  padding: 6px 16px;
+  font-size: 13px;
+  background: #ffd2b3;
+  color: #ff5200;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  transition: 0.3s;
+}
+
+.cart-btn:hover {
   background: #ff5200;
   color: white;
-  padding: 8px;
-  width: 100%;
-  border-radius: 6px;
-  font-weight: bold;
 }

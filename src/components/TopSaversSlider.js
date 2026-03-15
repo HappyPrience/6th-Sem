@@ -43,7 +43,7 @@ function TopSaversSlider() {
             stock: "In Stock"
         },
         {
-            name: "Native Organic Papaya",
+            name: "Organic Palya",
             price: "₹9.99",
             oldPrice: "₹15.00",
             img: papaya,

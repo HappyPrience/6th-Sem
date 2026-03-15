@@ -1,5 +1,5 @@
 import "../css/Navbar.css";
-import logo from "../assets/Logo.png";
+import logo1 from "../assets/Logo1.png";
 import { useState } from "react";
 import { FaHome, FaShoppingBag, FaShoppingCart, FaUser, FaBars, FaTimes } from "react-icons/fa";
 
@@ -12,7 +12,7 @@ function Navbar() {
     <div className="navbar">
 
       {/* Logo */}
-      <img src={logo} alt="logo" className="logo-img" />
+      <img src={logo1} alt="logo" className="logo-img" />
 
       {/* Mobile Menu Icon */}
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>

@@ -11,38 +11,15 @@ align-items:center;
 margin-top: 10px;
 }
 
-/* slider buttons */
-
-.slider-buttons button{
-background:#6a4de3;
-border:none;
-color:white;
-padding:8px 12px;
-margin-left:10px;
-border-radius:50%;
-cursor:pointer;
-font-size:16px;
-}
-
-.slider-buttons button:hover{
-background:#5a3fd1;
-}
-
 /* slider */
-
 .category-slider{
 height: 5cm;
 display:flex;
 gap:15px;
-overflow-x:auto;
-scroll-behavior:smooth;
+overflow:hidden;
 margin-top:30px;
 background-color: white;
 padding-top: 15px;
-}
-
-.category-slider::-webkit-scrollbar{
-display:none;
 }
 
 /*Buttons on slider*/
@@ -50,22 +27,22 @@ display:none;
     margin-top: 1.5cm;
     margin-left: 1.2cm;
     position: absolute;
-    background: black;
-    color: white;
+    background:#ffe5e5;
+    color: rgb(8, 8, 8);
     width: 35px;
     height: 35px;
     border-radius: 50%;
     border: none;
     cursor: pointer;
 }
-
-
-
+.right{
+    margin-right: 5.5cm;
+}
 /* cards */
 
 .category-card{
-min-width:150px;
-height: 3.5cm;
+min-width:170px;
+height: 4cm;
 background:white;
 padding:20px;
 margin-left: 10px;
@@ -74,13 +51,17 @@ border-radius:15px;
 box-shadow:0 4px 15px rgba(0,0,0,0.1);
 text-align:center;
 cursor:pointer;
-transition:0.3s;
+transition:0.5s ease-in-out;
 }
 
 .category-card img{
 width:80px;
 }
 
+.category-slider{
+  scroll-behavior: smooth;
+}
+
 .category-card:hover{
-transform:translateY(-8px);
+transform:translateY(-5px);
 }

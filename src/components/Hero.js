@@ -13,8 +13,8 @@ function Hero() {
       </div>
       
       <div className="thoughts">
-        <h1>North Karnataka food is a celebration of tradition, 
-          simplicity, and authentic rural flavors.</h1>
+        <h1>North Karnataka food is a Celebration of Tradition, 
+          Simplicity, and Authentic rural Flavors.</h1>
         <p>Fresh • Local • Homemade</p>
       </div>
 
